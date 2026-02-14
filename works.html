@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>portfolio</title>
+	
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link href="works.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+	
+<script src="js/jquery-3.7.1.min.js"></script>
+<script>
+$(function() {
+	  // .nav-button をクリックした時の設定
+	  $(".nav-button").on("click",function() {
+			  // <body> にクラス名 [menu-open] を追加・削除
+			  $("body").toggleClass("menu-open");
+	  });
+
+	  // ナビゲーション (<nav>) 内をクリックした時の設定
+	  $(document).on('click', '.menu-open nav', function() {
+			  // ブラウザに .nav-button をクリックさせる
+			  $('.nav-button').trigger('click');
+	  });
+});
+</script>
+	
+</head>
+
+<body id="top" onLoad="MM_preloadImages('img/insta-icon02.png')">
+<header>
+  <h1><a href="portfolio.html">Eline</a></h1>
+	
+<div class="nav-button">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+	
+  <nav>
+    <ul class="menu">
+      <li><a href="portfolio.html">HOME</a></li>
+      <li><a href="works.html">WORKS</a></li>
+      <li><a href="profile.html">PROFILE</a></li>
+      <li><a href="portfolio.html#contact">CONTACT</a></li>
+      <li><a href="https://www.instagram.com/erinakawashima/"><img src="img/insta-icon.png" alt="instagram" id="insta" onMouseOver="MM_swapImage('insta','','img/insta-icon02.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+    </ul>
+  </nav>
+	
+</header>
+	
+    
+<p class="main-img">
+  <picture>
+    <source srcset="img/r-works-main.jpg" media="(max-width: 800px)">
+    <img src="img/works-main.jpg" alt="">
+  </picture>
+</p>
+	
+	
+<main>
+  <section class="banner" id="banner">
+    <h2><img src="img/h2-banner.png" alt=""/></h2>
+	  
+    <div class="banner-box">
+		
+      <div class="b-box">
+		  
+        <p class="b-img"><img src="img/shampoo.jpg" alt=""/></p>
+		  
+        <div class="b-text">
+          <p><img src="img/b-color01.png" alt=""/></p>
+          <h3><a href="https://www.webcreatorbox.com/blog/banner-design-10">バナーデザイン練習10本ノック</a>より WCB Shampoo</h3>
+          <p>【概要】人気メーカーから新たに発売されたシャンプー。思わず手に取りたくなるかわいいデザインがポイント。</p>
+          <p>【記載事項】Happy Hair, Happy You! かわいさ、手軽さ、楽しさ。全部このシャンプーで。<br>
+          </p>
+          <p>【Point】可愛らしさと爽やかさのある背景画像を組み合わせ、ボトルの可愛らしさを際立たせる躍動感のあるデザインにしました。</p>
+        </div>
+      </div>
+		
+      <div class="b-box">
+        <p class="b-img"><img src="img/macha.jpg" alt=""/></p>
+		  
+        <div class="b-text">
+          <p><img src="img/b-color02.png" alt=""/></p>
+          <h3><a href="https://www.webcreatorbox.com/blog/banner-design-10">バナーデザイン練習10本ノック</a>より 茶寮上符</h3>
+          <p>【概要】昔ながらの和菓子が人気の老舗から、若者層の呼び込みのために新たに開発されたアイス抹茶ラテ。本格的な抹茶を気軽に楽しんでもらいたい。 </p>
+          <p>【記載事項】老舗茶寮が贈る 抹茶ラテ 600 円</p>
+          <p>【Point】ゴールドや落ち着いたグリーンを使用し、老舗のこだわりのある抹茶の高級感を表現しました。</p>
+        </div>
+      </div>
+		
+      <div class="b-box">
+        <p class="b-img"><img src="img/father.jpg" alt=""/></p>
+        <div class="b-text">
+          <p><img src="img/b-color03.png" alt=""/></p>
+          <h3>架空バナー作成 父の日フェア</h3>
+          <p>【概要】父の日の贈り物、購入する娘さんや主婦がターゲット</p>
+          <p>【記載事項】毎年6月第3日曜日は父の日 感謝を込めてプレゼントを送ろう 5/10〜6/23 マル三角百貨店6階特設会場 ラッピング無料(※一部有料)</p>
+          <p>【Point】落ち着いた色味で一目で父の日のプレゼントだと分かり、メッセージカードを載せることで実際にプレゼントを渡すことを想像できようなデザインにしました。 </p>
+        </div>
+      </div>
+		
+    </div>
+  </section>
+  
+  <section class="webiste" id="website">
+      
+    <h2><img src="img/h2-website.png" alt=""/></h2>
+	  
+    <div class="web-flex">
+		
+      <div class="web-box">
+        <p><img src="img/CozyChat.jpg" alt=""/></p>
+      </div>
+      <div class="web-text">
+        <span><p><img src="img/w-color01.png" alt=""/></p></span>
+        <h3>架空サイトのデザインカンプ Coffee Shop「Cozy chat」</h3>
+<p>Photoshopで作成したデザインカンプ</p>
+        <p><br>
+      </p>
+        <p><span class="graphic-text">【Concept】</span></p>
+        <p>くつろいだ時間を あなたとわたしで<br>
+        やさしい時間を過ごせる空間「Cozy chat」</p>
+        <p>&nbsp; </p>
+        <p>落ちついた感じのあたたかなイメージ、<br>20代後半～40代女性を意識した雰囲気で。<br>
+        記載内容は全て指示通り。バナーもオリジナルで作成。</p>
+        <p>&nbsp;</p>
+<p><span class="graphic-text">【Point】</span></p>
+        <p>キャッチコピーの「くつろいだ時間」や「やさしい時間」をWebサイトからも感じられるように意識して作成しました。<br>
+        コンセプトやイメージを大切にし、ナチュラルで落ち着いた色味で、全体の背景画像はコーヒー豆の袋を表現。 </p>
+        <p>全てフリー素材の画像を使用していますが、明るさやトーンがバラバラだったため、統一感が出るように色味やトーンを加工しています。</p>
+        <p>&nbsp;</p>
+        <p>使用ツール：Photoshop</p>
+        <p>制作期間：デザイン 4日</p>
+          
+      </div>
+    </div>
+      
+      
+    <div class="web-flex">
+		
+      <div class="web-box">
+        <p><img src="img/portfolio.jpg" alt=""/></p>
+      </div>
+      <div class="web-text">
+        <span>
+        <p><img src="img/w-color02.png" alt=""/></p></span>
+        <h3>Portfolioサイト</h3>
+        <p>就職活動のための自分のPortfolioサイトを作成しました。</p>
+        <p><br>
+        </p>
+        <p><span class="graphic-text">【Concept】</span></p>
+        <p>転職活動での書類通過や採用担当者の方に自身の作品やスキルを見てもらい、「会いたい」「一緒に働きたい」と思っていただけるようなPortfolioサイト。</p>
+        <p>&nbsp;</p>
+        <p><span class="graphic-text">【Point】</span></p>
+        <p>採用担当者の視点を意識して写真やモックアップを使用し、分かりやすく見やすいシンプルさの中に、自分らしさも表現できるように意識しました。</p>
+        <p>IndigoやLight BlueをベースにTopページや枠組みは落ち着いた配色に。<br>
+          ボタンのホバー時はアクセントカラーのYellowを使用。<br>
+        Profileページは、様々な仕事や表現活動をしてきた自分の個性も表現できるようにカラフルな写真を使用し芸歴も掲載しました。</p>
+        <p>&nbsp;</p>
+        <p>使用ツール：Figma、Photoshop、Dreamweaver</p>
+        <p>制作期間：デザイン 2日 / コーディング 1週間</p>
+      </div>
+    </div>
+    
+    <p class="readmore-btn"><strong jscontroller="zYmgkd" jsuid="pdJh7_o" data-processed="true"><a href="portfolio.html#top">View Site</a></strong></p>
+      
+      
+    <div class="web-flex">
+		
+      <div class="web-box">
+        <p>こちらは仮画像です。サイト完成後に差し替えます。</p>
+        <p><img src="img/leberment.jpg" alt=""/></p>
+      </div>
+      <div class="web-text">
+        <span>
+        <p><img src="img/w-color03.png" alt=""/></p></span>
+        <h3>架空Webサイト Select Shop ○○</h3>
+        <p>前職で勤めていた服飾雑貨やアパレルを扱うセレクトショップの内容を使わせていただき、架空Webサイトを作成中です。(オーナー様から使用、掲載許可済み。写真は実店舗と異なるものも使用しています。)</p>
+        <p><br>
+        </p>
+        <p><span class="graphic-text">【Concept】</span></p>
+        <p>『○○』遊び心を持って自由気ままに楽しくいこう！<br>
+        人はそれぞれ価値観が違い何が良くて何が嫌いなのかは千差万別。        </p>
+        <p> ◯◯は自分達が良いと思ったモノを集めるお店。</p>
+        <p>&nbsp; </p>
+        <p><span class="graphic-text">【Point】</span></p>
+        <p>オーナー様のこだわりやコンセプトを大切にし、オシャレな中にどこか一癖ある個性的で可愛い商品を引き立たせるようにシンプルな色味で、店内カラーやナチュラルなテイストをサイトにも使用。        </p>
+        <p>来店数を増やしたいとのご要望で、店舗情報を見やすく配置。</p>
+        <p>WebStoreへの誘導も考慮し、目立つボタンにしました。</p>
+        <p>元のサイトがページ数が多く、情報が分かりにくいところがあったので、1ページで全ての情報が分かるようにLPページに変更しました。</p>
+        <p>&nbsp;</p>
+        <p>使用ツール：Figma、Photoshop、Dreamweaver</p>
+        <p>制作期間：</p>
+      </div>
+    </div>
+    
+    <p class="readmore-btn"><strong jscontroller="zYmgkd" jsuid="pdJh7_o" data-processed="true">View Site</strong></p>
+      
+        
+  </section>
+  
+  <section class="graphic" id="graphic">
+    <h2><img src="img/h2-graphic.png" alt=""/></h2>
+      <p class="graphic-img"><img src="img/graphic.jpg" alt=""/></p>
+      
+      <div class="graphic-text">
+        <p><img src="img/g-color01.png" alt=""/></p>
+        <h3>パンフレット　○○ HEALTHY LIFESTYLE</h3>
+        <p>友人が経営しているヨガスタジオ、リラクゼーションサロン、カフェを併設した健康美容複合施設のパンフレットをお試しで作成中です。(掲載許可済み)</p>
+        <p>&nbsp;</p>
+        <p>【Concept】</p>
+        <p>○○とはLinkとNaturalを組み合わせた造語。
+          ヨガで体を動かして心身を整え、<br>
+        サロンで疲れた体をほぐして心身を癒し、カフェで内側からもキレイに。</p>
+        <p>&nbsp;</p>
+        <p>【Point】</p>
+        <p>コンセプトや店内カラーに合わせたナチュラルでヘルシーな色味。<br>
+          シンプルでスタイリッシュな見やすいデザインを大切にしながら、人の繋がりや暖かさを感じるパンフレットにしました。</p>
+      </div>
+    
+  </section>
+    
+    
+    <h2><img src="img/h2-others.png" alt=""/></h2>
+    <h3>SNS Promotion    </h3>
+    <h3>Brand Collaboration</h3>
+    <h3>Handmade</h3>
+    <p>&nbsp;</p>
+  
+	
+	
+	
+	
+	
+	
+  <p class="gotop"><a href="#top"><img src="img/gotop.png" alt="TOP"/></a></p>
+	
+</main>
+	
+<footer>
+  
+<p><picture>
+    <source srcset="img/r-footer.jpg" media="(max-width: 800px)">
+    <img src="img/footer.jpg" alt="Thank you for waching @ErinaKawashima">
+		
+  </picture>
+	</p>
+	
+</footer>
+	
+</body>
+</html>
