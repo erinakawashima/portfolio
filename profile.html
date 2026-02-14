@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>portfolio</title>
+	
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link href="profile.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script>
+$(function() {
+	  // .nav-button をクリックした時の設定
+	  $(".nav-button").on("click",function() {
+			  // <body> にクラス名 [menu-open] を追加・削除
+			  $("body").toggleClass("menu-open");
+	  });
+
+	  // ナビゲーション (<nav>) 内をクリックした時の設定
+	  $(document).on('click', '.menu-open nav', function() {
+			  // ブラウザに .nav-button をクリックさせる
+			  $('.nav-button').trigger('click');
+	  });
+});
+</script>
+
+</head>
+
+<body id="top" onLoad="MM_preloadImages('img/insta-icon02.png')">
+<header>
+  <h1><a href="portfolio.html">Eline</a></h1>
+	
+<div class="nav-button">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+	
+  <nav>
+    <ul class="menu">
+      <li><a href="portfolio.html">HOME</a></li>
+      <li><a href="works.html">WORKS</a></li>
+      <li><a href="profile.html">PROFILE</a></li>
+      <li><a href="portfolio.html#contact">CONTACT</a></li>
+      <li><a href="https://www.instagram.com/erinakawashima/"><img src="img/insta-icon.png" alt="instagram" id="insta" onMouseOver="MM_swapImage('insta','','img/insta-icon02.png',1)" onMouseOut="MM_swapImgRestore()"/></a></li>
+    </ul>
+  </nav>
+	
+</header>
+    
+    
+<p class="main-img">
+  <picture>
+    <source srcset="img/r-profile-main.jpg" media="(max-width: 800px)">
+    <img src="img/profile-main.jpg" alt="">
+  </picture>
+</p>    
+
+	
+<main>
+  
+  <section class="profile" id="profile">
+    <h2><img src="img/h2-profile.png" alt="PROFILE　わたしについて"/></h2>
+	  
+    <div class="flex-box profile-flex">
+		
+      <div class="p-box">
+        <p><img src="img/profile.png"  alt="プロフィール写真"/></p>
+      </div>
+      <div class="p-text">
+        <p><span>かわしま　えりな</span></p>
+        <p>&nbsp;</p>
+        <p>　〜 デザインに物語を 〜<br>
+        幼少期から演劇に携わってきた経験から、<br>表現の中に物語があるものや、人の心を動かすことに魅力を感じてきました。<br>シンプルで分かりやすい中にも楽しさがあり、<br>思わず先を見たくなるデザインを目指して勉強しています。</p>
+      </div>
+    </div>
+    
+  </section>
+    
+  <section class="skills" id="skills">
+      <p><h2><img src="img/h2-skills.png" alt=""/></h2></p>
+    
+    <div class="s-flex">
+      <div class="s-box">
+        <p><img src="img/ps.png" alt=""/></p>
+        <div class="s-text">
+          <p>Adobe Photoshop<br>の基本操作<br>デザインカンプ、<br>バナーの作成</p>
+        </div>
+        </div>
+      <div class="s-box">
+        <p><img src="img/Ai.png" alt=""/></p>
+        <div class="s-text">
+          <p>Adobe Illustrator<br>の基本操作<br>ロゴデザイン</p>
+        </div>
+        </div>
+      <div class="s-box">
+        <p><img src="img/dw.png" alt=""/></p>
+        <div class="s-text">
+          <p>HTML、CSS、<br>Javascript の基礎<br>Webサイトの作成</p>
+        </div>
+        </div>
+      <div class="s-box">
+        <p><img src="img/pr.png" alt=""/></p>
+        <div class="s-text">
+          <p>Adobe Premiere Pro<br>の基本操作<br>動画編集</p>
+        </div>
+        </div>
+      <div class="s-box">
+        <p><img src="img/figma.png" alt=""/></p>
+        <div class="s-text">
+          <p>Figma の基本操作</p>
+          <p>デザインカンプの作成</p>
+        </div>
+        </div>
+      </div>
+    </section>
+    
+    
+  <section class="biography" id="biography">	
+<h2><img src="img/h2-biography.png" alt=""/></h2>
+      
+<div class="bio-text">
+  <h4>【CM】</h4>
+  <ul>
+    <li>エバラ「茹でたお肉と野菜のサラダ」(2000年)</li>
+    <li>SONY PS 「ガチャろく」(2002年) </li>
+    <li>TOMY 「evio」(2003年)</li>
+    <li>ニッスイ「お弁当に便利」(2003年) </li>
+    <li>東芝「東芝HDD＆DVD」(2004年) </li>
+    <li>タカラ「きぐるみキグミー」(2005年) </li>
+    <li>大塚製薬「SOY JOY ～女優と社長編」(2008年)</li>
+  </ul>
+  <p> </p>
+  <h4>【TV】</h4>
+  <ul>
+    <li>TBS 愛の劇場「新・天までとどけ2」(2001年)</li>
+    <li>WOWOW 「Nail」(2001年)</li>
+    <li>CX 「非婚家族」(2001年) </li>
+    <li>CX「発掘あるある大辞典」再現VR(2001年)</li>
+    <li>テレビ朝日 土曜ワイド劇場「終着駅シリーズ」(2006年) </li>
+    <li>地方局「ケータイ少女～恋の課外授業」(2007年)</li>
+  </ul>
+  <p> </p>
+  <h4>【映画】</h4>
+  <ul>
+    <li>近代映画協会「折り梅」(2002年)</li>
+    <li>Netflix全裸監督シーズン2 第3話</li>
+  </ul>
+  <p> </p>
+  <h4>【舞台】</h4>
+  <ul>
+    <li>座☆風流堂公演「流刃直線事件帳」長屋の子供役 (2002年)</li>
+    <li>劇団空感演人プロデュース@両国エアースタジオ</li>
+  </ul>
+  <p>　「解体OK」宮川友紀役 (2014年6月)</p>
+  <p>　「WALKING IN THE SKY」大森真智子役 (2014年10月)</p>
+  <p>　「Juliet」村井恵美役、芹沢彩役(2015年6月)</p>
+  <p>　「海ゆかば」石垣ルリ役(2015年11月)</p>
+  <p>　「カスタマイズ」藤村美帆役(2015年11月)</p>
+  <p>　「六畳一間で愛してる」坂井沙織里役(2016年6月)</p>
+  <ul>
+    <li>M's企画第7回公演「Q＆A」@阿佐ヶ谷シアターシャイン(2016年10月)</li>
+    <li>青色有線第3回公演「デザート・ベイベー」@阿佐ヶ谷シアターシャイン(2017年2月)</li>
+    <li>team365歩 第3歩「カゲノムコウ」@上野ストアハウス(2017年6月)</li>
+    <li>青色有線第4回公演「甘い文句」@浅草九劇(2017年8月）</li>
+    <li>白井ラテONE公演「泳いで。」@プライムシアター中野新橋(2017年10月)</li>
+    <li>青色有線第5回本公演「私信/来信、ユートピア」劇中歌作詞、作曲、ギター弾き語り、出演 @シアター風姿花伝(2018年2月)</li>
+    <li>劇団空感演人10周年記念公演「黄昏VR～想い出は霧の中へ～」@新宿シアターサンモール(2018年5月)</li>
+    <li>青色有線第6回本公演「長く澄んだ夜」@下北沢シアター711(2018年8月)</li>
+    <li>青色遊船まもなく出航 No.1「迷路みたい」@花まる学習会王子小劇場(2019年1月)</li>
+    <li>エリィジャパン第１回戦『ガールズトーク』@下北沢 music bar Mumric Murphy(2019年5月)</li>
+    <li>青色遊船オムニバス短編集「天国で逢いましょう」@兎亭 (2020年12月)</li>
+    <li>実験的演劇パフォーマンス「THE ONE TABLE SHOW」@ミカン下北(2022年12月)</li>
+  </ul>
+  <p>&nbsp;</p>
+  <h4>【雑誌・Web・その他】</h4>
+  <ul>
+    <li>Webスチール ビューティーナビ</li>
+    <li>雑誌「ネイルUP」</li>
+    <li>フリーペーパー「めざましマガジン」</li>
+    <li>Beeミュージックスクールコンセプトムービー</li>
+    <li>Webマガジン「ムジンプレス」にてインタビュー記事【夢人図鑑Vol.5】に掲載中</li>
+    <li>「アートにエールを！」参加作品「子どものための戯曲　にゃんのため」声の出演(2020年9月)</li>
+  </ul>
+  <p>&nbsp;</p>
+  <p>…その他、業界専門紙、サロンモデルなど多数出演</p>
+</div>
+	  
+  </section>
+	
+  
+    
+    
+  <p class="gotop"><a href="#top"><img src="img/gotop.png" alt="TOP"/></a></p>
+	
+</main>
+	
+<footer>
+	
+  <p><picture>
+    <source srcset="img/r-footer.jpg" media="(max-width: 800px)">
+    <img src="img/footer.jpg" alt="Thank you for waching @ErinaKawashima">
+		
+  </picture>
+	</p>
+	
+</footer>
+	
+</body>
+</html>
