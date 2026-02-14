@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+
+.s-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.s-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.s-text {
+    width: 150px;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.bio-text {
+    padding-left: 50px;
+}
+
