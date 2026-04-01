@@ -8,6 +8,7 @@
 html {
 	font-size: 62.5%;
 /*	scroll-padding-top: 100px;*/
+	color: #1a323a;
 	scroll-behavior: smooth;
 }
 img {
@@ -42,6 +43,8 @@ header {
 	height: auto;
 	z-index: 1;
 }
+
+
 .menu {
 	list-style-type: none;
 	display: flex;
@@ -88,13 +91,12 @@ h2, h3 {
 }
 h3 {
 	color: #4C260F;
-	font-weight: normal;
-	padding: 20px 0;
+	padding: 10px 0;
 }
 
 
 
-nav ul,h1,h2,h3 {
+nav ul,h1,h2 {
   font-family: "Platypi", serif;
   font-optical-sizing: auto;
   /*font-weight: <weight>;*/
@@ -118,6 +120,20 @@ main {
 }
 */
 
+
+
+dt {
+	font-weight: bold;
+	color: #034358;
+	padding-top: 10px;
+}
+
+dt::before {
+  content:'■';
+  color: #76ABBD;
+}
+
+
 .flex-box {
 	padding: 30px 0;
     display: flex;
@@ -125,6 +141,7 @@ main {
 }
 
 .readmore-btn {
+    display: block;
 	width: 40%;
     max-width: 600px;
     min-width: 150px;
@@ -143,12 +160,10 @@ main {
 }
 .readmore-btn:hover{
 	opacity: 0.7;
+    text-decoration: none;
 }
 .readmore-btn a {
 	color: #fff;
-}
-.readmore-btn a:hover {
-	text-decoration: none;
 }
 
 .w-box {
@@ -261,7 +276,7 @@ footer {
 @media (max-width:800px){
     
 body {
-    background-color: #FFFAED;
+    /*background-color: #FFFAED; */
     font-size: 14px; /*文字サイズ*/
 }
 
@@ -361,7 +376,7 @@ header h1 {
  
     
 .readmore-btn {
-        font-size: 1.4rem;
+    font-size: 1.4rem;
     }
 .contact-text {
     font-size: 1.2rem;
