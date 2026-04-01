@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+/* パソコンでは改行を隠す */
+.sp-only {
+    display: none;
+  }
+
 
 .banner h3 {
     text-align: left;    
@@ -16,7 +21,7 @@
 .b-box {
 	display: flex;
 	justify-content: center;
-    padding: 1em;
+    padding: 2em;
     
 }
 .b-text {
@@ -24,10 +29,17 @@
     padding-left: 2em;
 }
 
+.w-img {
+    text-align: center;
+}
+
 .web-flex {
 	display: flex;
 	justify-content: space-between;
-    padding-top: 7rem;
+	padding-top: 7rem;
+	
+	/* border-radius: 15px;
+	border: 2px solid #76ABBD; */
 }
 .webiste .web-flex:nth-of-type(even) {
 	flex-direction: row-reverse;
@@ -38,7 +50,7 @@
 }
 .web-text span {
     text-align: center;
-}
+} 
 
 .graphic-img {
     text-align: center;
@@ -46,33 +58,62 @@
 .graphic-text {
 	text-align: center;
     margin: 2em auto;
+	padding: 0 2em 5em;
+	/*padding-bottom: 50px;*/
 }
 
+video {
+	max-width: 100%;
+	height: auto;
+}
+
+.video-img {
+	max-width: 400px;
+	height: auto;
+	margin: 0 auto;
+}
 
 @media (max-width:800px){
 
+/* スマホ（800px以下）では改行を表示する（通常は表示） */	
+ .sp-only {
+    display: inline;
+  }
+	
 
 .banner h3 {
     text-align: center;    
 }
+	
+.b-img {
+	text-align: center;
+	}
 .b-box {
 	display: block;
     justify-content: center;
-    text-align: center;
+    /*text-align: center;*/
 }
+.b-box span {
+		text-align: center;
+	}
 .b-text {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 	max-width: 600px;
     padding: 1em 0;
 }
 
 .web-flex {
     display: block;
-    text-align: center;  
+    /*text-align: center;  */
 }
 .web-text {
 	max-width: 600px;
     margin: 2em auto;
 }
+
+.graphic-text {
+	text-align: left;
+	/*padding: 0 2em;*/
+	}
     
 }
