@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>Leberment</title>
+	
+<link href="style.css" rel="stylesheet" type="text/css">
+
+	
+<!--googlefont?-->	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	
+	
+	
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+	
+<script src="js/jquery-3.7.1.min.js"></script>
+<script>
+$(function() {
+	  // .nav-button をクリックした時の設定
+	  $(".nav-button").on("click",function() {
+			  // <body> にクラス名 [menu-open] を追加・削除
+			  $("body").toggleClass("menu-open");
+	  });
+
+	  // ナビゲーション (<nav>) 内をクリックした時の設定
+	  $(document).on('click', '.menu-open nav', function() {
+			  // ブラウザに .nav-button をクリックさせる
+			  $('.nav-button').trigger('click');
+	  });
+});
+</script>	
+	
+	
+</head>
+
+	
+<body id="top" onLoad="MM_preloadImages('img/insta-icon02.png','img/insta-on.png')">
+	
+<header>
+	
+<div class="nav-button">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+	
+  <nav>
+    <ul class="menu">
+      <li><a href="#top">HOME</a></li>
+      <li><a href="#concept">CONCEPT</a></li>
+      <li><a href="#shop">SHOP</a></li>
+	  <li><a href="#webstore">WEB STORE</a></li>
+	  <li><a href="#cafe">CAFE</a></li>
+	  <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+	
+</header>
+	
+<div class="main-img-box">
+    
+<p class="main-img">
+  <picture>
+    <img src="img/main01.jpg" alt="Leberment">
+  </picture>
+</p>
+	
+<h1 class="main-logo"><a href="index.html"><img src="img/leberment-logo.png" alt="Lebermentロゴ"/></a></h1>
+   
+</div>
+	
+<main>
+  <section class="concept" id="concept">
+    <h2>CONCEPT</h2>
+	<div class="flex-box concept-flex">
+	  <div class="con-box">
+        <p class="name">Leberment</p>
+	    <p class="name-ja">リベルマン</p>
+	    <p>&nbsp;</p>
+		  <p class="name-mean">フランス語で<br>自由気まま、遊び心</p>
+	  </div>
+		
+	<div class="con-box">	
+       <img src="img/concept-flower.png" alt=""/>
+	</div> 
+	  
+	<div class="con-box">	
+       <p>Leberment は、2012年 東京 高円寺で生誕しました。<br>
+		  個人の作家さんやバイヤー独自ルートで仕入れをしている<br>
+		  服飾雑貨をメインとしたセレクトショップです。<br>
+		  <br>
+		   人はそれぞれ価値観が違い何が良くて何が嫌いなのかは千差万別。<br>
+		   Leberment は自分達が良いと思ったモノを集めるお店。<br>
+		   遊び心を持って自由気ままに楽しくいこう！</p>
+	</div> 
+	  
+	  </div>
+	  
+	  
+  </section>
+	  
+  <section class="shop" id="shop">	  
+    <h2>SHOP LIST</h2>	  
+    <div class="flex-box shop-border">
+		
+	<div class="shop-box">
+        <h3>KOENJI</h3>
+		<div class="insta-flex">
+		<h3 class="shop">高円寺</h3>
+		<p class="insta-img"><a href="https://www.instagram.com/leberment_koenji_shop/" target="new"><img src="img/insta.png" alt="高円寺インスタグラム" id="koenji" onMouseOver="MM_swapImage('koenji','','img/insta-on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></p>
+		</div>
+<p class="since">Since 2012.8</p>
+		<p><a href="https://www.instagram.com/leberment_koenji_shop/" target="new"><img src="img/koenji.jpg" alt="高円寺店"/></a></p>  
+		<p>〒 166-0003<br>
+			東京都杉並区高円寺南2-21-9<br>
+		TEL 03-6314-2390</p>
+		<!-- <p><br></p>
+		<p>中央総武線 高円寺駅 徒歩7分<br>
+			丸の内線 新高円寺駅 徒歩3分<br>
+			OPEN 12:00-20:00</p> -->
+      </div>
+	<div class="shop-box">
+        <h3>HAMADAYAMA</h3>
+		 <div class="insta-flex">
+		<h3 class="shop">浜田山</h3>
+		<p class="insta-img"><a href="https://www.instagram.com/leberment0414/" target="new"><img src="img/insta.png" alt="浜田山インスタグラム" id="hamadayama" onMouseOver="MM_swapImage('hamadayama','','img/insta-on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></p>
+		 </div>
+        <p class="since">Since 2016.4</p>
+		<p><a href="https://www.instagram.com/leberment0414/" target="new"><img src="img/hamadayama.jpg" alt="浜田山店"/></a></p>
+		<p>〒 168-0065<br>
+		東京都杉並区浜田山3-35-1<br>
+		TEL 03-5913-7384</p>
+      </div>
+	<div class="shop-box">
+        <h3>KICHIJOJI</h3>
+		 <div class="insta-flex">
+		<h3 class="shop">吉祥寺</h3>
+		<p class="insta-img"><a href="https://www.instagram.com/leberment_kichijoji_shop/" target="new"><img src="img/insta.png" alt="吉祥寺インスタグラム" id="kichijoji" onMouseOver="MM_swapImage('kichijoji','','img/insta-on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></p>
+		 </div>
+        <p class="since">Since 2020.12</p>
+		<p><a href="https://www.instagram.com/leberment_kichijoji_shop/" target="new"><img src="img/kichijoji.jpg" alt="吉祥寺店"/></a></p>
+		<p>〒 180-0004<br>
+			東京都武蔵野市吉祥寺本町4-13-15<br>
+			TEL0422-77-3001</p>
+      </div>
+	<div class="shop-box">
+        <h3>KAMAKURA</h3>
+		 <div class="insta-flex">
+		<h3 class="shop">鎌倉</h3>
+		<p class="insta-img"><a href="https://www.instagram.com/leberment_kamakura_shop/" target="new"><img src="img/insta.png" alt="鎌倉インスタグラム" id="kamakura" onMouseOver="MM_swapImage('kamakura','','img/insta-on.png',1)" onMouseOut="MM_swapImgRestore()"/></a></p>
+		 </div>
+        <p class="since">Since 2023.6</p>
+		<p><a href="https://www.instagram.com/leberment_kamakura_shop/" target="new"><img src="img/kamakura.jpg" alt="鎌倉店"/></a></p>
+		<p>〒 248-0006<br>
+			神奈川県鎌倉市小町2-9-6<br>
+			TEL 0467-27-2364</p>
+      </div>
+    </div>
+    
+  </section>
+	
+	
+  
+  <section class="webstore" id="webstore">
+    <h2>WEB STORE</h2>
+	  
+	 <div class="w-flex">
+	  <div class="flex-box">
+		  
+	  <div class="w-box">
+        <p><a href="#"><img src="img/w-01.jpg" alt=""/></a></p>
+      </div>
+	  <div class="w-box">
+        <p><a href="#"><img src="img/w-02.jpg" alt=""/></a></p>
+      </div>
+	  <div class="w-box">
+        <p><a href="#"><img src="img/w-03.jpg" alt=""/></a></p>
+	  </div>
+	  <div class="w-box">
+        <p><a href="#"><img src="img/w-04.jpg" alt=""/></a></p>
+      </div>
+	  <div class="w-box">
+        <p><a href="#"><img src="img/w-05.jpg" alt=""/></a></p>
+      </div>
+	  <div class="w-box">
+        <p><a href="#"><img src="img/w-06.jpg" alt=""/></a></p>
+      </div>
+	  <div class="w-box">
+        <p><a href="#"><img src="img/w-07.jpg" alt=""/></a></p>
+      </div>
+	  <div class="w-box">
+        <p><a href="#"><img src="img/w-08.jpg" alt=""/></a></p>
+      </div>
+    </div>
+	  
+   <!-- <div class="flex-box">
+      <div class="p-box">
+        <p><img src="img/profile.png"  alt=""/></p>
+      </div> 
+    </div> -->
+    
+<a href="https://leberment.thebase.in/" target="new" class="webstore-btn">WEB STORE</a>
+	  
+</div>	  
+    
+  </section>
+  
+	
+<section class="cafe" id="cafe">	  
+    <h2>CAFE</h2>
+	
+	<div class="cafe-flex">
+    <div class="flex-box">
+		
+	  <div class="cafe-box">
+		<p><img src="img/c-01.png" alt=""/></p>  
+		<p>Melon Soda Float</p>
+      </div>
+		
+	  <div class="cafe-box">
+		<p><img src="img/c-02.png" alt=""/></p>
+		<p>Coffee Float</p>
+      </div>
+		
+	  <div class="cafe-box">
+		<p><img src="img/c-03.png" alt=""/></p>
+		<p>Iced Coffee</p>
+      </div>
+		
+	  <div class="cafe-box">
+        <p><img src="img/c-04.png" alt=""/></p>
+		<p>Hot Coffee</p>
+      </div>
+    </div>
+    </div>
+    
+  </section>
+	
+	
+	
+	
+	
+<section class="contact" id="contact">
+    <h2>CONTACT</h2>
+    <div class="contact-box">
+      
+      <p class="contact-text">何かご意見、ご質問、メッセージ等ございましたら、こちらよりお気軽にお問い合わせくださいませ。</p>
+	<div class="c-flexbox">
+        <a href="mailto:info@leberment.org"  class="mail-btn">MAIL</a>
+		<a href="https://www.leberment.org/information/" target="new" class="information-btn">INFORMATION</a>
+    </div>
+    </div>
+</section>
+	
+	
+	
+  
+  <p class="gotop"><a href="#top"><img src="img/gotop-btn.png" alt="TOP"/></a></p>
+	
+</main>
+	
+<footer>
+
+<div class="footer-text">
+  <nav>
+    <ul class="footer-menu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="#concept">CONCEPT</a></li>
+      <li><a href="#shop">SHOP</a></li>
+	  <li><a href="#webstore">WEB STORE</a></li>
+	  <li><a href="#cafe">CAFE</a></li>
+	  <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+	
+  <p>&copy;Leberment</p>
+	
+ </div>	
+</footer>
+	
+</body>
+</html>
