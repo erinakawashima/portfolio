@@ -69,6 +69,12 @@ header {
 .main-img-box {
 	position: relative;
 }
+.main-img-box img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
 .main-logo {
 	position: absolute;
 	top: 50%;
@@ -82,6 +88,21 @@ header {
 	width: 100%;
 	height: auto;
 }
+
+.main-img {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-top: 110px;
+}
+
+.main-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
 
 h2 {
     /*outline: 2px solid red;*/
@@ -106,17 +127,7 @@ nav ul,h1,h2,h3 {
   font-weight: normal;
 }
 
-.main-img {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding-top: 110px;
-}
 
-.main-img img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 
 main {
 	max-width: 1200px;
@@ -362,7 +373,7 @@ footer {
 header {
 	justify-content: flex-end;
 }
-nav {
+header nav {
   position: fixed;
   top: 0;
   left: 100%;
@@ -384,7 +395,7 @@ nav .menu {
 
 nav .menu a {
   font-size: 24px; /*文字サイズ*/
-  padding: 30px 0;
+  padding: 20px 0;
   display: block;
   text-align: center;
 }
@@ -419,7 +430,7 @@ header h1 {
 }
 	
 
-.menu-open nav {
+.menu-open header nav {
 	left: 0;
 }	
 	
@@ -442,6 +453,13 @@ header h1 {
 	transition: 0.3s;
 }
 
+.footer-menu {
+	display: block;
+	justify-content: center;
+	font-size: 1.4rem;
+}
+	
+	
 }
 	
 @media (max-width:800px){
@@ -451,29 +469,47 @@ body {
     font-size: 1.4rem; /*文字サイズ*/
 }
 	
+	
+	
 h2 {
     padding: 3rem 0 0;
 	font-size: 4.0rem;
 }
-
     
 .flex-box {
     display: block;
 	text-align: center;
 }
+.name-mean {
+	font-size: 1.8rem;
+}
+	
+	
 	
 .shop-box {
 	margin-bottom: 20px;
 	}
     
-.readmore-btn {
-    font-size: 1.4rem;
-    }
+.webstore-btn,.mail-btn,.information-btn {
+    font-size: 1.6rem;
+    padding: 10px 0;
+	width: 60%;
+  }
+
+
+.c-flexbox {
+    flex-wrap: wrap;
+  }
+
+  .mail-btn,
+  .information-btn {
+    width: 60%;
+  }
+
 
 .gotop {
     width: 50px;
     height: 50px;
     }
     
-	}
-	
+}
