@@ -23,6 +23,7 @@ body {
 	overflow-x: hidden;
 	background-image: url(img/background-img.jpg);
 	background-repeat: repeat-y;
+	background-size: cover;
 }
 a {
 	color: #382912;
@@ -369,7 +370,9 @@ footer {
 
 
 @media (max-width:900px){
-    
+ 
+body {background-size: 900px auto;
+	}
 header {
 	justify-content: flex-end;
 }
@@ -467,6 +470,7 @@ header h1 {
 body {
     /*background-color: #FFFAED; */
     font-size: 1.4rem; /*文字サイズ*/
+	background-size: 800px auto;
 }
 	
 	
