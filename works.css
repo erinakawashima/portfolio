@@ -16,6 +16,7 @@
     width: 300px;
     max-width: none;
     flex-shrink: 0;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
 .b-box {
@@ -31,6 +32,9 @@
 
 .w-img {
     text-align: center;
+}
+.w-img img {
+	box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
 .web-flex {
@@ -55,6 +59,9 @@
 .graphic-img {
     text-align: center;
 }
+.graphic-img img {
+	box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
 .graphic-text {
 	text-align: center;
     margin: 2em auto;
@@ -62,7 +69,7 @@
 	/*padding-bottom: 50px;*/
 }
 
-video {
+/*video {
 	max-width: 100%;
 	height: auto;
 }
@@ -71,7 +78,7 @@ video {
 	max-width: 400px;
 	height: auto;
 	margin: 0 auto;
-}
+}*/
 
 @media (max-width:800px){
 
