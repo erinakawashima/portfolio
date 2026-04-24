@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+    <link href="top.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<title>株式会社SUCCESS</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1><a href="#">Sample</a></h1>
+
+            <div class="nav-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="nav-menu"><a href="#">TOP</a></li>
+                    <li class="nav-menu"><a href="#">理念</a></li>
+                    <li class="nav-menu"><a href="#">育成環境</a></li>
+                    <li class="nav-menu"><a href="#">会社概要</a></li>
+                    <li class="nav-menu"><a href="#">事業内容</a></li>
+                    <li class="nav-menu"><a href="#">お問い合わせ</a></li>
+                    
+                    <li class="blog-btn"><a href="#" style="color: #fff;">ブログ</a></li>
+                    <li class="recruit-btn"><a href="#" style="color: #fff;">採用情報</a></li>
+                </ul>
+            </nav>
+
+        </header>
+    </div>
+    
+    <main>
+        <div class="mainimg">
+            <p><img src="img/main-img.jpg" alt=""></p>
+        </div>
+    </main>
+    
+<div class="container">
+        <section class="business">
+            <h2>事業内容</h2>
+            <div class="box-area">
+                <div class="box">
+                    <p><img src="img/jigyou01.png" alt=""></p>
+                    <p class="text">運用管理</p>
+                </div>
+                <div class="box">
+                    <p><img src="img/jigyou02.png" alt=""></p>
+                    <p class="text">運用監視</p>
+                </div>
+                <div class="box">
+                    <p><img src="img/jigyou03.png" alt=""></p>
+                    <p class="text">構築設計</p>
+                </div>
+                <div class="box">
+                    <p><img src="img/jigyou04.png" alt=""></p>
+                    <p class="text">ヘルプデスク<br>キッティング</p>
+                </div>
+            </div>
+            <p><a href="#" class="detail-btn">詳細はこちら</a></p>
+        </section>
+        
+  <section class="recruit">
+            <h2>採用情報</h2>
+            <div class="recruit-box">
+                <p><img src="img/saiyou01.png" alt=""></p>
+                <div class="text-area">
+                    <p class="text">中途採用は随時受け付けております。<br>お気軽にお問い合わせください。
+                        </p>
+                    <p><a href="#" class="detail-btn">詳細はこちら</a></p>
+                </div>
+            </div>
+        </section>
+        
+  <section class="boss">
+            <h2>社長あいさつ</h2>
+            <div class="boss-box">
+                <div class="text-box">
+                    <p>私たちSampleは、これからも変化を恐れず、<br>挑戦し続ける企業でありたいと考えています。<br>お客様やパートナーの皆様と共に成長し、<br>より良い未来を創造していくために全力で努力して参ります。<br>今後とも変わらぬご支援とご愛顧を賜りますよう、<br>よろしくお願い申し上げます。</p>
+                  <div class="ceo">
+                    <p><em>株式会社Sample　代表取締役社長　<span>山田 サンプル</span></em></p>
+                  </div>
+                    <p class="boss-btn"><a href="#" class="detail-btn">詳細はこちら</a></p>
+              </div>
+                <p><img src="img/boss.png" alt=""></p>
+            </div>
+        </section>
+        
+    <section class="bunner">
+        <a href="#"><img src="img/banner1.png" alt="">
+        </a>
+        <a href="#"><img src="img/banner2.png" alt="">
+        </a>
+    </section>
+  </div>
+	
+    
+    <!--フッター-->
+<!-- <p class="footer-image">
+  <img src="img/f-ashirai.png" alt="" class="footer-img">
+</p> -->
+    
+<footer>
+    <div class="footer-text">
+            
+            <div class="footer-list">
+                <p><a href="#">サイトマップ</a></p>
+                <p><a href="#">利用許諾・免責事項</a></p>
+            </div>
+        
+        <div class="copyright">
+            <p>&copy; 2026 Sample</p>
+      </div>
+        
+    </div>
+    </footer>
+    
+  
+    
+    
+<!--  ここからJavaScript   -->
+
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    
+    <script>
+$(function() {
+//ハンバーガーメニューの設定
+	  $(".nav-button").on("click",function() {
+			  $("body").toggleClass("menu-open");
+	  });
+// ナビゲーション (<nav>) 内をクリックした時の設定
+	  $(document).on('click', '.menu-open nav', function() {
+			  $('.nav-button').trigger('click');
+	  });
+});
+</script>
+</body>
+
+</html>

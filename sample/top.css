@@ -1,0 +1,220 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.business {
+    text-align: center;
+}
+
+.business .box {
+    text-align: center;
+}
+
+.business .text {
+    font-size: 18px;
+}
+
+.detail-btn {
+    background-color: #3c8dce;
+    width: 200px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    color: white;
+}
+
+/*追加*/
+.detail-btn:hover {
+    background-color: #7abee6; /* ホバー時の色 */
+}
+
+
+/*変更した*/
+section {
+    max-width: 1100px;
+    width: 100%;
+    margin: 100px auto 0;
+}
+
+
+
+section p {
+    margin-bottom: 20px;
+}
+
+
+
+
+.box-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box {
+    width: 23%;
+}
+
+
+
+
+.box img {
+    width: 220px;
+}
+
+.recruit-box {
+    display: flex;
+    gap: 30px;
+}
+
+.recruit-box .text-area {
+    margin: auto;
+}
+
+.text-area {
+    text-align: left;
+}
+
+.text-area .text {
+    margin-bottom: 50px;
+}
+
+
+
+.boss-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.boss .text {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.boss .text-box {
+    margin: 50px;
+}
+
+.boss .boss-btn {
+    margin-top: 50px;
+}
+
+.boss-btn {
+    margin: auto 0 0 0;
+}
+
+.ceo {
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.ceo span {
+    font-size: 18px;
+}
+   
+.boss-box img {
+    margin: auto;
+    }
+
+.text {
+    line-height: 2;
+}
+
+.bunner {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.bunner-item img {
+    width: 525px;
+    height: auto;
+    display: block;
+}
+
+
+
+@media (max-width:1250px){
+    
+    
+    
+}
+
+@media (max-width:600px) {
+    
+/*  top.css  */
+    
+.box {
+    width: 100%;
+}  
+    
+.box-area {
+    display: block;
+    margin-bottom: 20px;
+	gap: 20px 0;
+}
+
+.text-area {
+    text-align: center;
+}  
+    
+    
+.recruit-box,.boss-box {
+    display: block;
+    }
+
+.recruit-box img,.boss-box img {
+    width: 100%;
+    height: auto;
+    }
+    
+    
+    
+  
+.boss-box {
+    display: block;
+    text-align: center;
+    }
+
+.boss p {
+    text-align: center;
+    }
+
+.boss .boss-btn {
+    text-align: center;
+    margin-top: 20px;
+    }
+
+.boss .detail-btn {
+    display: inline-block;
+    width: auto;
+    margin: 20px auto;
+    }
+    
+.boss-box img {
+    width: 360px;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+    }
+
+    
+
+.bunner {
+    flex-direction: column;
+    gap: 20px;
+    }   
+    
+     
+    
+}
